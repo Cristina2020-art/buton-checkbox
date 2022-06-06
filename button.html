@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--cdn icon stylesheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button checkbox</title>
+  <link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+  <section>
+    <div class="slider1">
+      
+    </div>
+  </section>
+
+  
+  <ul>
+    <li>
+      <label> 
+      <input type="checkbox">
+      <div class="icon-box thumbUp">
+        <i class="fa fa-thumbs-up"></i>
+      </div>
+      </label>
+    </li>
+
+    <!--2nd icon-->
+    <li>
+      <label>
+      <input type="checkbox">
+      <div class="icon-box notification">
+        <i class="fa fa-bell"></i>
+      </div>
+      </label>
+
+    </li>
+    <!--3rd-->
+    <li>
+      <label>
+      <input type="checkbox">
+      <div class="icon-box heart">
+        <i class="fa fa-heart"></i>
+      </div>
+      </label>
+    </li>
+    <!--4th-->
+    <li>
+      <label>
+      <input type="checkbox">
+      <div class="icon-box message">
+        <i class="fa fa-envelope"></i>
+      </div>
+      </label>
+    </li>
+    <!--5th-->
+    <li>
+      <label>
+      <input type="checkbox">
+      <div class="icon-box star">
+        <i class="fa fa-star"></i>
+      </div>
+      </label>
+    </li>
+    <!--6th-->
+    <li>
+      <label>
+      <input type="checkbox">
+      <div class="icon-box refresh">
+        <i class="fa fa-history"></i>
+      </div>
+      </label>
+    </li>
+
+  </ul><!--End HTML Code-->
+  <script>
+    /*Toggle Checkbox*/
+   const btn = document.querySelector(".slider1");
+   
+   btn.addEventListener("click", function () {
+     document.body.classList.toggle("dark-theme");
+   });
+   </script>
+</body>
+</html>

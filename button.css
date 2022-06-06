@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #DAFFFB;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 280px;
+  background: #DAFFFB;
+  box-shadow: -5px -5px 10px white, 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: -3px -3px 10px white, 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+ul label {
+  position: relative;
+}
+ 
+ul .icon-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #DAFFFB;
+  box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+ul .far, ul .fa {
+  font-size: 32px;
+  transition: 0.5s;
+}
+ul .fa-thumbs-up {
+  color: #1978dc;
+}
+ul .fa-heart {
+  color: #e62d46;
+}
+ul .fa-star {
+  color: #ff9100;
+}
+ul .fa-bell {
+  color: yellow;
+}
+ul .fa-envelope {
+  color: #00ff69;
+}
+ul .fa-history {
+  color: #8200ff;
+}
+ul input[type=checkbox]:checked ~ .thumbUp {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .thumbUp .fa-thumbs-up {
+  color: #1978dc;
+  text-shadow: none;
+}
+ul input[type=checkbox]:checked ~ .heart {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .heart .fa-heart {
+  color: #e62d46;
+  text-shadow: none;
+}
+
+/* 3 no */
+
+ul input[type=checkbox]:checked ~ .star {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .star .fa-star {
+  color: #ff9100;
+  text-shadow: none;
+}
+
+
+/* 4 no */
+
+ul input[type=checkbox]:checked ~ .notification {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .notification .fa-bell {
+  color: yellow;
+  text-shadow: none;
+}
+
+
+/* 5 no */
+
+ul input[type=checkbox]:checked ~ .message {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .message .fa-envelope {
+  color: #00ff69;
+  text-shadow: none;
+}
+
+/* 6 no */
+
+ul input[type=checkbox]:checked ~ .refresh {
+  background: #DAFFFB;
+  border: 3px transparent;
+  box-shadow: inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+ul input[type=checkbox]:checked ~ .refresh .fa-history {
+  color: #8200ff;
+  text-shadow: none;
+}
+ul input[type=checkbox]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ============ slider ===============*/
+.slider1{
+
+  width: 80px;
+  background: #333;
+  position: relative;
+  height: 30px;
+  margin-top: -250px;
+  right: -170px;
+  border-radius: 50px;
+
+}
+
+/* =================== Dark Theme ==============*/
+
+body.dark-theme {
+  background: #232427;
+}
+
+body.dark-theme ul {
+  background: #232427;
+  border: 1px double #333;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+              inset -5px -5px 20px rgba(255,255,255,0.1),
+              5px 5px 20px rgba(0, 0, 0, 0.3),
+              -5px -5px 20px rgba(255,255,255,0.1);
+}
+body.dark-theme li {
+  box-shadow: 3px 3px 10px #252626,
+              -3px -3px 10px #454646;
+}
+
+body.dark-theme .icon-box {
+  background: #101010;
+  border: 3px solid #313030;
+  box-shadow: 3px 3px 10px #252626,
+            -3px -3px 10px #454646;
+}
+body.dark-theme input[type=checkbox]:checked ~ .thumbUp {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(25,120,220,0.5),
+              0 0 20px rgba(25,120,220,0.5),
+              0 0 30px rgba(25,120,220,0.5),
+              inset 0 0 10px #1978dc;
+}
+body.dark-theme input[type=checkbox]:checked ~ .thumbUp .fa-thumbs-up {
+  color: #fff;
+  text-shadow: 0 0 10px #1978dc,
+                0 0 10px #1978dc;
+}
+
+/* 2nd button */
+
+body.dark-theme input[type=checkbox]:checked ~ .notification {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(220,255,0,0.5),
+              0 0 20px rgba(220,255,0,0.5),
+              0 0 30px rgba(220,255,0,0.5),
+              inset 0 0 10px #d9ec27;
+}
+body.dark-theme input[type=checkbox]:checked ~ .notification .fa-bell {
+  color: #fff;
+  text-shadow: 0 0 10px #dcff00,
+                0 0 10px #dcff00;
+}
+
+/* 3rd button */
+ 
+body.dark-theme input[type=checkbox]:checked ~ .heart {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255,19,0,0.5),
+              0 0 20px rgba(255,19,0,0.5),
+              0 0 30px rgba(255,19,0,0.5),
+              inset 0 0 10px #ff1300;
+}
+body.dark-theme input[type=checkbox]:checked ~ .heart .fa-heart {
+  color: #fff;
+  text-shadow: 0 0 10px #ff1300,
+                0 0 10px #ff1300;
+}
+
+/* 4th Button */
+
+ 
+body.dark-theme input[type=checkbox]:checked ~ .message {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,255,105,0.5),
+              0 0 20px rgba(0,255,105,0.5),
+              0 0 30px rgba(0,255,105,0.5),
+              inset 0 0 10px #00ff69;
+}
+body.dark-theme input[type=checkbox]:checked ~ .message .fa-envelope{
+  color: #fff;
+  text-shadow: 0 0 10px #00ff69,
+                0 0 10px #00ff69;
+}
+/* 5th button */
+
+body.dark-theme input[type=checkbox]:checked ~ .star {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255,145,0,0.5),
+              0 0 20px rgba(255,145,0,0.5),
+              0 0 30px rgba(255,145,0,0.5),
+              inset 0 0 10px #ff9100;
+}
+body.dark-theme input[type=checkbox]:checked ~ .star .fa-star{
+  color: #fff;
+  text-shadow: 0 0 10px #ff9100,
+                0 0 10px #ff9100;
+
+
+}
+
+/* 6th button */
+
+body.dark-theme input[type=checkbox]:checked ~ .refresh {
+  background: #000;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(130, 0, 255, 0.5),
+              0 0 20px rgba(130, 0, 255, 0.5),
+              0 0 30px rgba(130, 0, 255, 0.5),
+              inset 0 0 10px #8200ff;
+}
+body.dark-theme input[type=checkbox]:checked ~ .refresh .fa-history{
+  color: #fff;
+  text-shadow: 0 0 10px #8200ff,
+                0 0 10px #8200ff;
+
+
+}
